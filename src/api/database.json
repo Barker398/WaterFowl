@@ -1,0 +1,30 @@
+{
+    "ducks": [
+        {
+            "id": 1,
+            "common name": "",
+            "species name": "",
+            "flywayId": "",
+            "dietId": "",
+            "habitatId": "" 
+        }
+    ],
+    "flyways": [
+        {
+            "id": 1,
+            "name": ""
+        }
+    ],
+    "diet": [
+        {
+            "id": 1,
+            "foodType": ""
+        }
+    ],
+    "habitat": [
+        {
+            "id": 1,
+            "description": ""
+        }
+    ]
+}
