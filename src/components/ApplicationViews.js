@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 export const ApplicationViews = () => {
     return (
         <>
-            <Route exact path="/">
+            <Route exact path="/home">
             </Route>
         </>
     )

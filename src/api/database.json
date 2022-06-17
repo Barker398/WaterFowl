@@ -1,30 +1,52 @@
 {
+    "users": [
+        {
+            "id": 1,
+            "userName": "ducks247",
+            "firstName": "Sam",
+            "lastName": "Barker",
+            "email": "sam12@gmail.com",
+            "password": 1234
+        }
+    ],
     "ducks": [
         {
             "id": 1,
-            "common name": "",
-            "species name": "",
-            "flywayId": "",
-            "dietId": "",
-            "habitatId": "" 
+            "common name": "Mallard",
+            "species name": "Anas platyrhynchos",
+            "flywayId": "1",
+            "dietId": "1",
+            "habitatId": "1" 
         }
     ],
     "flyways": [
         {
             "id": 1,
-            "name": ""
+            "name": "Mississippi Flyway"
+        },
+        {
+            "id": 2,
+            "name": "Atlantic Flyway"
+        },
+        {
+            "id": 3,
+            "name": "Central Flyway"
+        },
+        {
+            "id": 4,
+            "name": "Pacific Flyway"
         }
     ],
     "diet": [
         {
             "id": 1,
-            "foodType": ""
+            "foodType": "Mainly foragers and will eat a variety of food, largely agricultural seed and grain."
         }
     ],
     "habitat": [
         {
             "id": 1,
-            "description": ""
+            "description": "Almost any wetland habitats."
         }
     ]
 }

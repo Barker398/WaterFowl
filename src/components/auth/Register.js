@@ -60,7 +60,7 @@ export const Register = () => {
             </dialog>
 
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for VetExpress</h1>
+                <h1 className="h3 mb-3 font-weight-normal">Register to learn about your Favorite Waterfowl</h1>
                 <fieldset>
                     <label htmlFor="userName"> User Name </label>
                     <input ref={userName} type="text" name="userName" className="form-control" placeholder="User name" required autoFocus />
