@@ -17,6 +17,30 @@
             "flywayId": "1",
             "dietId": "1",
             "habitatId": "1" 
+        },
+        {
+            "id": 2,
+            "common name": "Ring-neck",
+            "species name": "Aythya collaris",
+            "flywayId": "2",
+            "dietId": "2",
+            "habitatId": "2" 
+        },
+        {
+            "id": 3,
+            "common name": "Redhead",
+            "species name": "Aythya americana",
+            "flywayId": "3",
+            "dietId": "3",
+            "habitatId": "3" 
+        },
+        {
+            "id": 4,
+            "common name": "Cinnamon Teal",
+            "species name": "Spatula cyanoptera",
+            "flywayId": "4",
+            "dietId": "4",
+            "habitatId": "4" 
         }
     ],
     "flyways": [
@@ -41,12 +65,36 @@
         {
             "id": 1,
             "foodType": "Mainly foragers and will eat a variety of food, largely agricultural seed and grain."
+        },
+        {
+            "id": 2,
+            "foodType": "Submerged plants, and aquatic invertebrates."
+        },
+        {
+            "id": 3,
+            "foodType": "Aquatic plants, fish eggs, and invertebrates."
+        },
+        {
+            "id": 4,
+            "foodType": "Aquatic vegetation, zooplankton, and insects."
         }
     ],
     "habitat": [
         {
             "id": 1,
             "description": "Almost any wetland habitats."
+        },
+        {
+            "id": 2,
+            "description": "Fresh water marshes and bogs."
+        },
+        {
+            "id": 3,
+            "description": "Lakes, ponds, and other wetlands throughout the Midwest's Prairies."
+        },
+        {
+            "id": 4,
+            "description": "Marshes, and other freshwater wetlands in western North America."
         }
     ]
 }
