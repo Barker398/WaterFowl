@@ -23,6 +23,18 @@
         {
             "id": 1,
             "name": "Mississippi Flyway"
+        },
+        {
+            "id": 2,
+            "name": "Atlantic Flyway"
+        },
+        {
+            "id": 3,
+            "name": "Central Flyway"
+        },
+        {
+            "id": 4,
+            "name": "Pacific Flyway"
         }
     ],
     "diet": [
