@@ -12,13 +12,13 @@ export const NavBar = () => {
                 <Link className="navbar__link" to="/history">History</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/species">Species</Link>
+                <Link className="navbar__link" to="/waterfowl">WaterFowl</Link>
             </li>
             <li className="navbar__item">
                 <Link className="navbar__link" to="/habbitat">Habbitat</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/conservation">Conservation</Link>
+                <Link className="navbar__link" to="/flyways">FlyWays</Link>
             </li>
         </ul>
     )

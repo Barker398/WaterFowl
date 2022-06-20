@@ -41,6 +41,38 @@
             "flywayId": "4",
             "dietId": "4",
             "habitatId": "4" 
+        },
+        {
+            "id": 5,
+            "common name": "American green-winged teal",
+            "species name": "Anas crecca",
+            "flywayId": "2",
+            "dietId": "6",
+            "habitatId": "8" 
+        },
+        {
+            "id": 6,
+            "common name": "Northern Pintail",
+            "species name": "Anas acuta",
+            "flywayId": "4",
+            "dietId": "5",
+            "habitatId": "6" 
+        },
+        {
+            "id": 7,
+            "common name": "Gadwall",
+            "species name": "Mareca strepera",
+            "flywayId": "3",
+            "dietId": "8",
+            "habitatId": "7" 
+        },
+        {
+            "id": 8,
+            "common name": "Canvasback",
+            "species name": "Aythya valisineria",
+            "flywayId": "1",
+            "dietId": "7",
+            "habitatId": "5" 
         }
     ],
     "flyways": [
@@ -77,6 +109,22 @@
         {
             "id": 4,
             "foodType": "Aquatic vegetation, zooplankton, and insects."
+        },
+        {
+            "id": 5,
+            "foodType": "Seeds from aquatic plants, worms, snails, crustaceans, aquatic insects, and grains such as rice, wheat, corn, and barley."
+        },
+        {
+            "id": 6,
+            "foodType": "Teal eat mainly aquatic invertebrates and seeds."
+        },
+        {
+            "id": 7,
+            "foodType": "Canvasbacks are omnivores, eating everything from seeds to plant tubers and from mussels to insects."
+        },
+        {
+            "id": 8,
+            "foodType": "Eat mostly submerged aquatic vegetation such as algae, grasses, rushes, sedges, pondweed, widgeon grass, and water milfoil, including leaves, stems, roots, and seeds. They also eat snails, midges, water beetles, and other invertebrates."
         }
     ],
     "habitat": [
@@ -95,6 +143,22 @@
         {
             "id": 4,
             "description": "Marshes, and other freshwater wetlands in western North America."
+        },
+        {
+            "id": 5,
+            "description": "Small lakes, deep-water marshes, bays, and ponds. They tend toward waters with a dense border of cattails, rushes, and reed grass, but in the boreal forest they use open marshes."
+        },
+        {
+            "id": 6,
+            "description": " Wetlands, open areas with short vegetation, wet meadows, grasslands, and crop fields."
+        },
+        {
+            "id": 7,
+            "description": "Small ponds scattered throughout the Great Plains and Canadian prairies."
+        },
+        {
+            "id": 8,
+            "description": "Isolated river deltas, forest wetlands, and mixed prairie regions across northern North America"
         }
     ]
 }
