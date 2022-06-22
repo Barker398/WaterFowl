@@ -1,10 +1,11 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-import { ApplicationViews } from "../ApplicationViews";
+import { ApplicationViews } from "./ApplicationViews";
 import { NavBar } from "./nav/NavBar";
 import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
 import "./Waterfowl.css"
+
 
 export const  Waterfowl = () => (
     <>
@@ -14,7 +15,7 @@ export const  Waterfowl = () => (
             return (
               <>
                 <NavBar />
-                <ApplicationViews />
+                <ApplicationViews/>
               </>
             );
           } else {
