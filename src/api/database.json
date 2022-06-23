@@ -12,64 +12,64 @@
     "ducks": [
         {
             "id": 1,
-            "common name": "Mallard",
-            "species name": "Anas platyrhynchos",
+            "commonName": "Mallard",
+            "speciesName": "Anas platyrhynchos",
             "flywayId": "1",
             "dietId": "1",
             "habitatId": "1" 
         },
         {
             "id": 2,
-            "common name": "Ring-neck",
-            "species name": "Aythya collaris",
+            "commonName": "Ring-neck",
+            "speciesName": "Aythya collaris",
             "flywayId": "2",
             "dietId": "2",
             "habitatId": "2" 
         },
         {
             "id": 3,
-            "common name": "Redhead",
-            "species name": "Aythya americana",
+            "commonName": "Redhead",
+            "speciesName": "Aythya americana",
             "flywayId": "3",
             "dietId": "3",
             "habitatId": "3" 
         },
         {
             "id": 4,
-            "common name": "Cinnamon Teal",
-            "species name": "Spatula cyanoptera",
+            "commonName": "Cinnamon Teal",
+            "speciesName": "Spatula cyanoptera",
             "flywayId": "4",
             "dietId": "4",
             "habitatId": "4" 
         },
         {
             "id": 5,
-            "common name": "American green-winged teal",
-            "species name": "Anas crecca",
+            "commonName": "American green-winged teal",
+            "speciesName": "Anas crecca",
             "flywayId": "2",
             "dietId": "6",
             "habitatId": "8" 
         },
         {
             "id": 6,
-            "common name": "Northern Pintail",
-            "species name": "Anas acuta",
+            "commonName": "Northern Pintail",
+            "speciesName": "Anas acuta",
             "flywayId": "4",
             "dietId": "5",
             "habitatId": "6" 
         },
         {
             "id": 7,
-            "common name": "Gadwall",
-            "species name": "Mareca strepera",
+            "commonName": "Gadwall",
+            "speciesName": "Mareca strepera",
             "flywayId": "3",
             "dietId": "8",
             "habitatId": "7" 
         },
         {
             "id": 8,
-            "common name": "Canvasback",
-            "species name": "Aythya valisineria",
+            "commonName": "Canvasback",
+            "speciesName": "Aythya valisineria",
             "flywayId": "1",
             "dietId": "7",
             "habitatId": "5" 

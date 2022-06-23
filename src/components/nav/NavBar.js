@@ -5,14 +5,14 @@ import "./NavBar.css"
 export const NavBar = () => {
     return (
         <ul className="navbar">
-            <li className="navbar__item active">
+            {/* <li className="navbar__item active">
                 <Link className="navbar__link" to="/home">Home</Link>
-            </li>
+            </li> */}
             <li className="navbar__item">
                 <Link className="navbar__link" to="/diet">Diet</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/waterfowl">WaterFowl</Link>
+                <Link className="navbar__link" to="/ducks">Ducks</Link>
             </li>
             <li className="navbar__item">
                 <Link className="navbar__link" to="/habitat">Habitat</Link>
