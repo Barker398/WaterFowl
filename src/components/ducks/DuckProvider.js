@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 
 export const DuckContext = createContext()
 
-export const DuckProvider = () => {
+export const DuckProvider = (props) => {
     const [ducks, setDucks] = useState([])
 
     const getDucks = () => {
@@ -16,7 +16,7 @@ export const DuckProvider = () => {
         return fetch("http://localhost:8088/ducks", {
             method: "POST",
             headers: {
-                "Content-Typea": "application/json"
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(duckObj)
         })
@@ -27,7 +27,7 @@ export const DuckProvider = () => {
         <DuckContext.Provider value={{
             ducks, getDucks, addDucks
         }}>
-               
+              {props.children} 
         </DuckContext.Provider>
     )
 }
