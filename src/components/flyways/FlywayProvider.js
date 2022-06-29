@@ -2,7 +2,8 @@ import { createContext, useState } from "react";
 
 
 export const FlywayContext = createContext()
-export const FlywayProvider = () => {
+
+export const FlywayProvider = (props) => {
     const [flyways, setFlyways] = useState([])
 
     const getFlyways = () => {
@@ -15,7 +16,7 @@ export const FlywayProvider = () => {
         <FlywayContext.Provider value={{
             flyways, getFlyways
         }}>
-                
+              {props.children}  
         </FlywayContext.Provider>
     )
 }

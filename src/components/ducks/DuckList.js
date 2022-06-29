@@ -7,7 +7,6 @@ export const DuckList = () => {
 
   
     useEffect(() => {
-        console.log("DuckList: useEffect - getDucks")
         getDucks()
     }, [])
 
