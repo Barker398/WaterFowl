@@ -6,7 +6,6 @@ export const FlywayList = () => {
     const { flyways, getFlyways } = useContext(FlywayContext)
 
     useEffect(() => {
-        console.log("FlywayList: useEffect - getFlyways")
         getFlyways()
     }, [])
 
