@@ -13,7 +13,7 @@ export const ApplicationViews = () => {
                     <Route exact path="/ducks">
                         <DuckList />
                     </Route>
-                    <Route exact path="/flyways">
+                    <Route path="/flyways">
                         <FlywayList />
                     </Route>
                 </FlywayProvider>
