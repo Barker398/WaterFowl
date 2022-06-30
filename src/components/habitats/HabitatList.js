@@ -1,4 +1,5 @@
 import { useContext, useEffect } from "react"
+import { HabitatContext } from "./HabitatProvider"
 
 export const HabitatList = () => {
     const { habitats, getHabitats } = useContext(HabitatContext)
