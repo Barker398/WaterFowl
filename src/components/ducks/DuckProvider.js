@@ -27,7 +27,7 @@ export const DuckProvider = (props) => {
         <DuckContext.Provider value={{
             ducks, getDucks, addDucks
         }}>
-              {props.children} 
+            {props.children} 
         </DuckContext.Provider>
     )
 }
