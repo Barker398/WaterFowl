@@ -93,7 +93,7 @@
             "name": "Pacific Flyway"
         }
     ],
-    "diet": [
+    "diets": [
         {
             "id": 1,
             "foodType": "Mainly foragers and will eat a variety of food, largely agricultural seed and grain."
@@ -127,7 +127,7 @@
             "foodType": "Eat mostly submerged aquatic vegetation such as algae, grasses, rushes, sedges, pondweed, widgeon grass, and water milfoil, including leaves, stems, roots, and seeds. They also eat snails, midges, water beetles, and other invertebrates."
         }
     ],
-    "habitat": [
+    "habitats": [
         {
             "id": 1,
             "description": "Almost any wetland habitats."
