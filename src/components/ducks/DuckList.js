@@ -21,7 +21,7 @@ export const DuckList = () => {
                                 <div className="duck__commonName">
                                     Common Name: {duck.commonName}    
                                 </div>
-                                <div className="duck__speciesName">
+                                {/* <div className="duck__speciesName">
                                     Species Name: {duck.speciesName}
                                 </div>
                                 <div className="duck__flywayId">
@@ -32,7 +32,7 @@ export const DuckList = () => {
                                 </div>
                                 <div className="duck__habitatId">
                                     habitat: {duck.habitatId}
-                                </div>
+                                </div> */}
                             </div>
                         )
                     })}</section>
