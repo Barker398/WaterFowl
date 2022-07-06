@@ -5,11 +5,17 @@ export const DuckContext = createContext()
 
 export const DuckProvider = (props) => {
     const [ducks, setDucks] = useState([])
+    const [duck, setDuck] = useState([])
 
     const getDucks = () => {
         return fetch("http://localhost:8088/ducks")
         .then(res => res.json())
         .then(setDucks)
+    }
+
+    const getDuckById = (duckId) => {
+        return fetch(`http://localhost:8088/ducks?id=${duckId}`)
+        .then(res => res.json())
     }
      
     const addDucks = duckObj => {
@@ -25,7 +31,7 @@ export const DuckProvider = (props) => {
 
     return (
         <DuckContext.Provider value={{
-            ducks, getDucks, addDucks
+            ducks, duck, setDuck, getDucks, getDuckById, addDucks
         }}>
             {props.children} 
         </DuckContext.Provider>
