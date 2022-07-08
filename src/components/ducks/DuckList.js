@@ -21,6 +21,9 @@ export const DuckList = () => {
                                 <div className="duck__commonName">
                                     Common Name: {duck.commonName}    
                                 </div>
+                                <div className="duck__image">
+                                    {duck.url}    
+                                </div>
                                 {/* <div className="duck__speciesName">
                                     Species Name: {duck.speciesName}
                                 </div>
