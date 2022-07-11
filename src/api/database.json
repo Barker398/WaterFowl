@@ -17,7 +17,7 @@
             "flywayId": "1",
             "dietId": "1",
             "habitatId": "1",
-            "url": "public/images/mallard1.jpg"
+            "url": "images/mallard1.jpg"
         },
         {
             "id": 2,
@@ -26,7 +26,7 @@
             "flywayId": "2",
             "dietId": "2",
             "habitatId": "2",
-            "url": ""
+            "url": "images/ringneck2.jpg"
         },
         {
             "id": 3,
@@ -35,7 +35,7 @@
             "flywayId": "3",
             "dietId": "3",
             "habitatId": "3",
-            "url": "" 
+            "url": "images/redhead3.jpg" 
         },
         {
             "id": 4,
@@ -44,7 +44,7 @@
             "flywayId": "4",
             "dietId": "4",
             "habitatId": "4",
-            "url": ""
+            "url": "images/cinnamonteal4.jpeg"
         },
         {
             "id": 5,
@@ -53,7 +53,7 @@
             "flywayId": "2",
             "dietId": "6",
             "habitatId": "8",
-            "url": "" 
+            "url": "images/greenwingteal5.jpg" 
         },
         {
             "id": 6,
@@ -62,7 +62,7 @@
             "flywayId": "4",
             "dietId": "5",
             "habitatId": "6",
-            "url": "" 
+            "url": "images/northernpintail6.jpg" 
         },
         {
             "id": 7,
@@ -71,7 +71,7 @@
             "flywayId": "3",
             "dietId": "8",
             "habitatId": "7",
-            "url": ""
+            "url": "images/gadwall7.jpg"
         },
         {
             "id": 8,
@@ -80,7 +80,7 @@
             "flywayId": "1",
             "dietId": "7",
             "habitatId": "5",
-            "url": "" 
+            "url": "images/canvasback8.jpg" 
         }
     ],
     "flyways": [
