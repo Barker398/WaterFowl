@@ -87,22 +87,22 @@
         {
             "id": 1,
             "name": "Mississippi Flyway",
-            "url": ""
+            "url": "images/mississippi-flyway.webp"
         },
         {
             "id": 2,
             "name": "Atlantic Flyway",
-            "url": ""
+            "url": "images/atlantic-flyway.gif"
         },
         {
             "id": 3,
             "name": "Central Flyway",
-            "url": ""
+            "url": "images/central-flyway.png"
         },
         {
             "id": 4,
             "name": "Pacific Flyway",
-            "url": ""
+            "url": "images/pacific-flyway.gif"
         }
     ],
     "diets": [
