@@ -15,9 +15,10 @@ export const DuckDetail = (props) => {
         <>
             <section className="duck">
                 <h3 className="duck__commonName">{props.duck.commonName}</h3>
-                <div className="animal__breed">{props.animal.breed}</div>
-                <div className="animal__location">Location: {props.animal.location.name}</div>
-                <div className="animal__owner">Customer: {props.animal.customer.name}</div>
+                <div className="duck__speciesName">{props.duck.speciesName}</div>
+                <div className="duck__flyway">Flyway: {props.duck.flyway.name}</div>
+                <div className="duck__diet">Diet: {props.duck.diet.foodType}</div>
+                <div className="duck__habitat">Habitat: {props.duck.habitat.description}</div>
             </section>
         </>
     )

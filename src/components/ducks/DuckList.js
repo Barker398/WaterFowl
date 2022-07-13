@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react"
 import { DuckContext } from "./DuckProvider"
 import "./Duck.css"
+import { Link } from "react-router-dom"
 
 export const DuckList = () => {
     const { ducks, getDucks } = useContext(DuckContext)
@@ -18,9 +19,12 @@ export const DuckList = () => {
                     {ducks.map((duck) => {
                         return (
                             <div className="duck" key={duck.id} id={`duck--${duck.id}`}>
-                                <div className="duck__commonName">
+                                {/* <div className="duck__commonName">
                                     Common Name: {duck.commonName}    
-                                </div>
+                                </div> */}
+                                <Link to={`/ducks/detail/${duck.id}`}>
+                                    <button className="commonName">{duck.commonName}</button>    
+                                </Link>
                                 {/* <div className="duck__speciesName">
                                     Species Name: {duck.speciesName}
                                 </div>

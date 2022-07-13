@@ -2,6 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import { DietList } from "./diets/DietList";
 import { DietProvider } from "./diets/DietProvider";
+import { DuckDetail } from "./ducks/DuckDetail";
 import { DuckList } from "./ducks/DuckList";
 import { DuckProvider } from "./ducks/DuckProvider";
 import { FlywayList } from "./flyways/FlywayList";
@@ -18,6 +19,9 @@ export const ApplicationViews = () => {
                         <DietProvider>
                             <Route exact path="/ducks">
                                 <DuckList />
+                            </Route>
+                            <Route exact path="/ducks/detail/:duckId(/d+)">
+                                <DuckDetail />    
                             </Route>
                             <Route exact path="/flyways">
                                 <FlywayList />
