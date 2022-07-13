@@ -16,7 +16,8 @@
             "speciesName": "Anas platyrhynchos",
             "flywayId": "1",
             "dietId": "1",
-            "habitatId": "1" 
+            "habitatId": "1",
+            "url": "images/mallard1.jpg"
         },
         {
             "id": 2,
@@ -24,7 +25,8 @@
             "speciesName": "Aythya collaris",
             "flywayId": "2",
             "dietId": "2",
-            "habitatId": "2" 
+            "habitatId": "2",
+            "url": "images/ringneck2.jpg"
         },
         {
             "id": 3,
@@ -32,7 +34,8 @@
             "speciesName": "Aythya americana",
             "flywayId": "3",
             "dietId": "3",
-            "habitatId": "3" 
+            "habitatId": "3",
+            "url": "images/redhead3.jpg" 
         },
         {
             "id": 4,
@@ -40,7 +43,8 @@
             "speciesName": "Spatula cyanoptera",
             "flywayId": "4",
             "dietId": "4",
-            "habitatId": "4" 
+            "habitatId": "4",
+            "url": "images/cinnamonteal4.jpeg"
         },
         {
             "id": 5,
@@ -48,7 +52,8 @@
             "speciesName": "Anas crecca",
             "flywayId": "2",
             "dietId": "6",
-            "habitatId": "8" 
+            "habitatId": "8",
+            "url": "images/greenwingteal5.jpg" 
         },
         {
             "id": 6,
@@ -56,7 +61,8 @@
             "speciesName": "Anas acuta",
             "flywayId": "4",
             "dietId": "5",
-            "habitatId": "6" 
+            "habitatId": "6",
+            "url": "images/northernpintail6.jpg" 
         },
         {
             "id": 7,
@@ -64,7 +70,8 @@
             "speciesName": "Mareca strepera",
             "flywayId": "3",
             "dietId": "8",
-            "habitatId": "7" 
+            "habitatId": "7",
+            "url": "images/gadwall7.jpg"
         },
         {
             "id": 8,
@@ -72,25 +79,30 @@
             "speciesName": "Aythya valisineria",
             "flywayId": "1",
             "dietId": "7",
-            "habitatId": "5" 
+            "habitatId": "5",
+            "url": "images/canvasback8.jpg" 
         }
     ],
     "flyways": [
         {
             "id": 1,
-            "name": "Mississippi Flyway"
+            "name": "Mississippi Flyway",
+            "url": "images/mississippi-flyway.webp"
         },
         {
             "id": 2,
-            "name": "Atlantic Flyway"
+            "name": "Atlantic Flyway",
+            "url": "images/atlantic-flyway.gif"
         },
         {
             "id": 3,
-            "name": "Central Flyway"
+            "name": "Central Flyway",
+            "url": "images/central-flyway.png"
         },
         {
             "id": 4,
-            "name": "Pacific Flyway"
+            "name": "Pacific Flyway",
+            "url": "images/pacific-flyway.gif"
         }
     ],
     "diets": [
