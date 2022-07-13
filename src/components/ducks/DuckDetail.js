@@ -15,7 +15,7 @@ export const DuckDetail = (props) => {
         <>
             <section className="duck">
                 <h3 className="duck__commonName">{props.duck.commonName}</h3>
-                <div className="duck__speciesName">{props.duck.speciesName}</div>
+                <div className="duck__speciesName">Species Name: {props.duck.speciesName}</div>
                 <div className="duck__flyway">Flyway: {props.duck.flyway.name}</div>
                 <div className="duck__diet">Diet: {props.duck.diet.foodType}</div>
                 <div className="duck__habitat">Habitat: {props.duck.habitat.description}</div>
