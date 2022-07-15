@@ -20,7 +20,7 @@ export const ApplicationViews = () => {
                             <Route exact path="/ducks">
                                 <DuckList />
                             </Route>
-                            <Route exact path="/ducks/detail/:duckId(/d+)">
+                            <Route exact path="/ducks/detail/:duckId(\d+)">
                                 <DuckDetail />    
                             </Route>
                             <Route exact path="/flyways">
