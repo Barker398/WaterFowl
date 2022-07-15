@@ -8,7 +8,7 @@ export const DuckProvider = (props) => {
     const [duck, setDuck] = useState([])
 
     const getDucks = () => {
-        return fetch("http://localhost:8088/ducks")
+        return fetch("http://localhost:8088/ducks?_expand=flyway&_expand=diet&_expand=habitat")
         .then(res => res.json())
         .then(setDucks)
     }
