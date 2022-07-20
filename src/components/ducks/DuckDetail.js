@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import { DuckContext } from "./DuckProvider"
 import "./Duck.css"
 
-export const DuckDetail = (props) => {
+export const DuckDetail = () => {
     const { ducks } = useContext(DuckContext)
     const [ duck, setDuck ] = useState({ flyway: {}, diet: {}, habitat: {}})
 
