@@ -14,7 +14,7 @@ export const DuckDetail = (props) => {
     // }, [])
 
     useEffect(() => {
-        const thisDuck = ducks.find(d => d.id === duckId) || { flyway: {}, diet: {}, habitat: {} }
+        const thisDuck = ducks.find(d => d.id === parseInt(duckId)) || { flyway: {}, diet: {}, habitat: {} }
         setDuck(thisDuck)
     }, [duckId])
 
