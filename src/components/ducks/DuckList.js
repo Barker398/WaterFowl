@@ -1,11 +1,11 @@
 import { useContext, useEffect } from "react"
 import { DuckContext } from "./DuckProvider"
+import { Link, useHistory } from "react-router-dom"
 import "./Duck.css"
-import { Link } from "react-router-dom"
 
 export const DuckList = () => {
     const { ducks, getDucks } = useContext(DuckContext)
-
+    const history = useHistory()
 
     useEffect(() => {
         getDucks()
@@ -14,7 +14,7 @@ export const DuckList = () => {
     return (
 
         <section className="ducks">
-            <h1 className="list__header">Ducks</h1>
+            <h1 className="list__header">Duck Species</h1>
             <section className="list__section">
                 {ducks.map((duck) => {
                     return (
@@ -23,8 +23,11 @@ export const DuckList = () => {
                                 <button className="commonName">{duck.commonName}</button>
                             </Link>
                             <img src={duck.url} alt="duck pictures" class="center" />
+                            <button onClick={
+                                () => history.push("/ducks/create")}>
+                                Add Waterfowl
+                            </button>
                         </div>
-
                     )
                 })}</section>
         </section>
