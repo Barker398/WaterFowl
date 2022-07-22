@@ -23,13 +23,13 @@ export const DuckList = () => {
                                 <button className="commonName">{duck.commonName}</button>
                             </Link>
                             <img src={duck.url} alt="duck pictures" class="center" />
-                            <button onClick={
-                                () => history.push("/ducks/create")}>
-                                Add Waterfowl
-                            </button>
                         </div>
                     )
                 })}</section>
+            <button onClick={
+                () => history.push("/ducks/create")}>
+                Add Waterfowl
+            </button>
         </section>
 
     )
