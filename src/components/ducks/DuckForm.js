@@ -1,11 +1,16 @@
 import { useContext, useEffect, useState } from "react"
 import { useHistory } from "react-router-dom";
+import { DietContext } from "../diets/DietProvider";
+import { FlywayContext } from "../flyways/FlywayProvider";
+import { HabitatContext } from "../habitats/HabitatProvider";
 import { DuckContext } from "./DuckProvider"
 
 
 export const DuckForm = () => {
     const { addDuck } = useContext(DuckContext)
-    const { ducks, getDucks } = useContext(DuckContext)
+    const { flyways, getFlyways } = useContext(FlywayContext)
+    const { diets, getDiets } = useContext(DietContext)
+    const { habitats, getHabitats } = useContext(HabitatContext)
 
     const [duck, setDuck] = useState({
         commonName: "",
@@ -19,7 +24,7 @@ export const DuckForm = () => {
     const history = useHistory()
 
     useEffect(() => {
-        getDucks()
+        getFlyways().then(getDiets).then(getHabitats)
     }, [])
 
     const handleControlledInputChange = (e) => {
@@ -34,18 +39,21 @@ export const DuckForm = () => {
     const handleClickSaveDuck = (e) => {
         e.preventDefault()
 
-        const duckId = parseInt(duck.id)
+        // const duckId = parseInt(duck.id)
+        const flywayId = parseInt(duck.flywayId)
+        const dietId = parseInt(duck.dietId)
+        const habitatId = parseInt(duck.habitatId)
 
-        if (duckId === 0) {
-            window.alert("Add Waterfowl")
+        if (flywayId === 0 || dietId === 0 || habitatId === 0) {
+            window.alert("Select a flyway, diet, and habitat")
         }
         else {
             const newDuck = {
                 commonName: duck.commonName,
                 speciesName: duck.speciesName,
-                flywayId: duck.flywayId,
-                dietId: duck.dietId,
-                habitatId: duck.habitatId,
+                flywayId: flywayId,
+                dietId: dietId,
+                habitatId: habitatId,
                 url: duck.url,
             }
             addDuck(newDuck)
@@ -59,31 +67,52 @@ export const DuckForm = () => {
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="commonName">Common Name:</label>
-                    <input type="text" id="commonName" required autoFocus className="form-control" placeholder="CommonName" value={ducks.commonName} onChange={handleControlledInputChange} />
+                    <input type="text" id="commonName" required autoFocus className="form-control" placeholder="CommonName" value={duck.commonName} onChange={handleControlledInputChange} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="speciesName">Species Name:</label>
-                    <input type="text" id="speciesName" required autoFocus className="form-control" placeholder="SpeciesName" value={ducks.speciesName} onChange={handleControlledInputChange} />
+                    <input type="text" id="speciesName" required autoFocus className="form-control" placeholder="SpeciesName" value={duck.speciesName} onChange={handleControlledInputChange} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="flyway">Flyway: </label>
-                    <input type="text" id="flyway" required autoFocus className="form-control" placeholder="Flyway" value={ducks.flywayId} onChange={handleControlledInputChange} />
+                    <select name="flywayId" id="flywayId" className="form-control" value={duck.flywayId} onChange={handleControlledInputChange}>
+                        <option value="0">Select Flyway</option>
+                        {flyways.map(f => (
+                            <option key={f.id} value={f.id}>
+                                {f.name}    
+                            </option>
+                        ))}    
+                    </select>
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="diet">Diet: </label>
-                    <input type="text" id="diet" required autoFocus className="form-control" placeholder="Diet" value={ducks.dietId} onChange={handleControlledInputChange} />
+                    <select name="dietId" id="dietId" className="form-control" value={duck.dietId} onChange={handleControlledInputChange}>
+                        <option value="0">Select Diet</option>
+                        {diets.map(d => (
+                            <option key={d.id} value={d.id}>
+                                {d.foodType}    
+                            </option>
+                        ))}    
+                    </select>
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="habitat">Habitat: </label>
-                    <input type="text" id="habitat" required autoFocus className="form-control" placeholder="Habitat" value={ducks.habitatId} onChange={handleControlledInputChange} />
+                    <select name="habitatId" id="habitatId" className="form-control" value={duck.habitatId} onChange={handleControlledInputChange}>
+                        <option value="0">Select Habitat</option>
+                        {habitats.map(h => (
+                            <option key={h.id} value={h.id}>
+                                {h.description}    
+                            </option>
+                        ))}    
+                    </select>
                 </div>
             </fieldset>
             <button className="btn btn-primary" onClick={handleClickSaveDuck}>
