@@ -83,9 +83,9 @@ export const DuckForm = () => {
                         <option value="0">Select Flyway</option>
                         {flyways.map(f => (
                             <option key={f.id} value={f.id}>
-                                {f.name}    
+                                {f.name}
                             </option>
-                        ))}    
+                        ))}
                     </select>
                 </div>
             </fieldset>
@@ -96,9 +96,9 @@ export const DuckForm = () => {
                         <option value="0">Select Diet</option>
                         {diets.map(d => (
                             <option key={d.id} value={d.id}>
-                                {d.foodType}    
+                                {d.foodType}
                             </option>
-                        ))}    
+                        ))}
                     </select>
                 </div>
             </fieldset>
@@ -109,15 +109,15 @@ export const DuckForm = () => {
                         <option value="0">Select Habitat</option>
                         {habitats.map(h => (
                             <option key={h.id} value={h.id}>
-                                {h.description}    
+                                {h.description}
                             </option>
-                        ))}    
+                        ))}
                     </select>
                 </div>
             </fieldset>
             <button className="btn btn-primary" onClick={handleClickSaveDuck}>
                 Save Waterfowl
             </button>
-            </form>
-            )
+        </form>
+    )
 }

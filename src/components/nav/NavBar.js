@@ -8,15 +8,15 @@ export const NavBar = () => {
             {/* <li className="navbar__item active">
                 <Link className="navbar__link" to="/home">Home</Link>
             </li> */}
-            <li className="navbar__item">
+            {/* <li className="navbar__item">
                 <Link className="navbar__link" to="/diets">Diets</Link>
-            </li>
+            </li> */}
             <li className="navbar__item">
                 <Link className="navbar__link" to="/ducks">Ducks</Link>
             </li>
-            <li className="navbar__item">
+            {/* <li className="navbar__item">
                 <Link className="navbar__link" to="/habitats">Habitats</Link>
-            </li>
+            </li> */}
             <li className="navbar__item">
                 <Link className="navbar__link" to="/flyways">FlyWays</Link>
             </li>
