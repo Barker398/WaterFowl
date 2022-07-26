@@ -18,7 +18,7 @@ export const DuckProvider = (props) => {
         .then(res => res.json())
     }
      
-    const addDucks = duckObj => {
+    const addDuck = duckObj => {
         return fetch("http://localhost:8088/ducks", {
             method: "POST",
             headers: {
@@ -31,7 +31,7 @@ export const DuckProvider = (props) => {
 
     return (
         <DuckContext.Provider value={{
-            ducks, duck, setDuck, getDucks, getDuckById, addDucks
+            ducks, duck, setDuck, getDucks, getDuckById, addDuck
         }}>
             {props.children} 
         </DuckContext.Provider>

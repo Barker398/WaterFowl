@@ -1,176 +1,185 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "userName": "ducks247",
-            "firstName": "Sam",
-            "lastName": "Barker",
-            "email": "sam12@gmail.com",
-            "password": 1234
-        }
-    ],
-    "ducks": [
-        {
-            "id": 1,
-            "commonName": "Mallard",
-            "speciesName": "Anas platyrhynchos",
-            "flywayId": "1",
-            "dietId": "1",
-            "habitatId": "1",
-            "url": "images/mallard1.jpg"
-        },
-        {
-            "id": 2,
-            "commonName": "Ring-neck",
-            "speciesName": "Aythya collaris",
-            "flywayId": "2",
-            "dietId": "2",
-            "habitatId": "2",
-            "url": "images/ringneck2.jpg"
-        },
-        {
-            "id": 3,
-            "commonName": "Redhead",
-            "speciesName": "Aythya americana",
-            "flywayId": "3",
-            "dietId": "3",
-            "habitatId": "3",
-            "url": "images/redhead3.jpg" 
-        },
-        {
-            "id": 4,
-            "commonName": "Cinnamon Teal",
-            "speciesName": "Spatula cyanoptera",
-            "flywayId": "4",
-            "dietId": "4",
-            "habitatId": "4",
-            "url": "images/cinnamonteal4.jpeg"
-        },
-        {
-            "id": 5,
-            "commonName": "American green-winged teal",
-            "speciesName": "Anas crecca",
-            "flywayId": "2",
-            "dietId": "6",
-            "habitatId": "8",
-            "url": "images/greenwingteal5.jpg" 
-        },
-        {
-            "id": 6,
-            "commonName": "Northern Pintail",
-            "speciesName": "Anas acuta",
-            "flywayId": "4",
-            "dietId": "5",
-            "habitatId": "6",
-            "url": "images/northernpintail6.jpg" 
-        },
-        {
-            "id": 7,
-            "commonName": "Gadwall",
-            "speciesName": "Mareca strepera",
-            "flywayId": "3",
-            "dietId": "8",
-            "habitatId": "7",
-            "url": "images/gadwall7.jpg"
-        },
-        {
-            "id": 8,
-            "commonName": "Canvasback",
-            "speciesName": "Aythya valisineria",
-            "flywayId": "1",
-            "dietId": "7",
-            "habitatId": "5",
-            "url": "images/canvasback8.jpg" 
-        }
-    ],
-    "flyways": [
-        {
-            "id": 1,
-            "name": "Mississippi Flyway",
-            "url": "images/mississippi-flyway.webp"
-        },
-        {
-            "id": 2,
-            "name": "Atlantic Flyway",
-            "url": "images/atlantic-flyway.gif"
-        },
-        {
-            "id": 3,
-            "name": "Central Flyway",
-            "url": "images/central-flyway.png"
-        },
-        {
-            "id": 4,
-            "name": "Pacific Flyway",
-            "url": "images/pacific-flyway.gif"
-        }
-    ],
-    "diets": [
-        {
-            "id": 1,
-            "foodType": "Mainly foragers and will eat a variety of food, largely agricultural seed and grain."
-        },
-        {
-            "id": 2,
-            "foodType": "Submerged plants, and aquatic invertebrates."
-        },
-        {
-            "id": 3,
-            "foodType": "Aquatic plants, fish eggs, and invertebrates."
-        },
-        {
-            "id": 4,
-            "foodType": "Aquatic vegetation, zooplankton, and insects."
-        },
-        {
-            "id": 5,
-            "foodType": "Seeds from aquatic plants, worms, snails, crustaceans, aquatic insects, and grains such as rice, wheat, corn, and barley."
-        },
-        {
-            "id": 6,
-            "foodType": "Teal eat mainly aquatic invertebrates and seeds."
-        },
-        {
-            "id": 7,
-            "foodType": "Canvasbacks are omnivores, eating everything from seeds to plant tubers and from mussels to insects."
-        },
-        {
-            "id": 8,
-            "foodType": "Eat mostly submerged aquatic vegetation such as algae, grasses, rushes, sedges, pondweed, widgeon grass, and water milfoil, including leaves, stems, roots, and seeds. They also eat snails, midges, water beetles, and other invertebrates."
-        }
-    ],
-    "habitats": [
-        {
-            "id": 1,
-            "description": "Almost any wetland habitats."
-        },
-        {
-            "id": 2,
-            "description": "Fresh water marshes and bogs."
-        },
-        {
-            "id": 3,
-            "description": "Lakes, ponds, and other wetlands throughout the Midwest's Prairies."
-        },
-        {
-            "id": 4,
-            "description": "Marshes, and other freshwater wetlands in western North America."
-        },
-        {
-            "id": 5,
-            "description": "Small lakes, deep-water marshes, bays, and ponds. They tend toward waters with a dense border of cattails, rushes, and reed grass, but in the boreal forest they use open marshes."
-        },
-        {
-            "id": 6,
-            "description": " Wetlands, open areas with short vegetation, wet meadows, grasslands, and crop fields."
-        },
-        {
-            "id": 7,
-            "description": "Small ponds scattered throughout the Great Plains and Canadian prairies."
-        },
-        {
-            "id": 8,
-            "description": "Isolated river deltas, forest wetlands, and mixed prairie regions across northern North America"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "userName": "ducks247",
+      "firstName": "Sam",
+      "lastName": "Barker",
+      "email": "sam12@gmail.com",
+      "password": 1234
+    }
+  ],
+  "ducks": [
+    {
+      "id": 1,
+      "commonName": "Mallard",
+      "speciesName": "Anas platyrhynchos",
+      "flywayId": "1",
+      "dietId": "1",
+      "habitatId": "1",
+      "url": "images/mallard1.jpg"
+    },
+    {
+      "id": 2,
+      "commonName": "Ring-neck",
+      "speciesName": "Aythya collaris",
+      "flywayId": "2",
+      "dietId": "2",
+      "habitatId": "2",
+      "url": "images/ringneck2.jpg"
+    },
+    {
+      "id": 3,
+      "commonName": "Redhead",
+      "speciesName": "Aythya americana",
+      "flywayId": "3",
+      "dietId": "3",
+      "habitatId": "3",
+      "url": "images/redhead3.jpg"
+    },
+    {
+      "id": 4,
+      "commonName": "Cinnamon Teal",
+      "speciesName": "Spatula cyanoptera",
+      "flywayId": "4",
+      "dietId": "4",
+      "habitatId": "4",
+      "url": "images/cinnamonteal4.jpeg"
+    },
+    {
+      "id": 5,
+      "commonName": "American green-winged teal",
+      "speciesName": "Anas crecca",
+      "flywayId": "2",
+      "dietId": "6",
+      "habitatId": "8",
+      "url": "images/greenwingteal5.jpg"
+    },
+    {
+      "id": 6,
+      "commonName": "Northern Pintail",
+      "speciesName": "Anas acuta",
+      "flywayId": "4",
+      "dietId": "5",
+      "habitatId": "6",
+      "url": "images/northernpintail6.jpg"
+    },
+    {
+      "id": 7,
+      "commonName": "Gadwall",
+      "speciesName": "Mareca strepera",
+      "flywayId": "3",
+      "dietId": "8",
+      "habitatId": "7",
+      "url": "images/gadwall7.jpg"
+    },
+    {
+      "id": 8,
+      "commonName": "Canvasback",
+      "speciesName": "Aythya valisineria",
+      "flywayId": "1",
+      "dietId": "7",
+      "habitatId": "5",
+      "url": "images/canvasback8.jpg"
+    },
+    {
+      "commonName": "",
+      "speciesName": "",
+      "flywayId": 1,
+      "dietId": 1,
+      "habitatId": 1,
+      "url": "",
+      "id": 9
+    }
+  ],
+  "flyways": [
+    {
+      "id": 1,
+      "name": "Mississippi Flyway",
+      "url": "images/mississippi-flyway.webp"
+    },
+    {
+      "id": 2,
+      "name": "Atlantic Flyway",
+      "url": "images/atlantic-flyway.gif"
+    },
+    {
+      "id": 3,
+      "name": "Central Flyway",
+      "url": "images/central-flyway.png"
+    },
+    {
+      "id": 4,
+      "name": "Pacific Flyway",
+      "url": "images/pacific-flyway.gif"
+    }
+  ],
+  "diets": [
+    {
+      "id": 1,
+      "foodType": "Mainly foragers and will eat a variety of food, largely agricultural seed and grain."
+    },
+    {
+      "id": 2,
+      "foodType": "Submerged plants, and aquatic invertebrates."
+    },
+    {
+      "id": 3,
+      "foodType": "Aquatic plants, fish eggs, and invertebrates."
+    },
+    {
+      "id": 4,
+      "foodType": "Aquatic vegetation, zooplankton, and insects."
+    },
+    {
+      "id": 5,
+      "foodType": "Seeds from aquatic plants, worms, snails, crustaceans, aquatic insects, and grains such as rice, wheat, corn, and barley."
+    },
+    {
+      "id": 6,
+      "foodType": "Teal eat mainly aquatic invertebrates and seeds."
+    },
+    {
+      "id": 7,
+      "foodType": "Canvasbacks are omnivores, eating everything from seeds to plant tubers and from mussels to insects."
+    },
+    {
+      "id": 8,
+      "foodType": "Eat mostly submerged aquatic vegetation such as algae, grasses, rushes, sedges, pondweed, widgeon grass, and water milfoil, including leaves, stems, roots, and seeds. They also eat snails, midges, water beetles, and other invertebrates."
+    }
+  ],
+  "habitats": [
+    {
+      "id": 1,
+      "description": "Almost any wetland habitats."
+    },
+    {
+      "id": 2,
+      "description": "Fresh water marshes and bogs."
+    },
+    {
+      "id": 3,
+      "description": "Lakes, ponds, and other wetlands throughout the Midwest's Prairies."
+    },
+    {
+      "id": 4,
+      "description": "Marshes, and other freshwater wetlands in western North America."
+    },
+    {
+      "id": 5,
+      "description": "Small lakes, deep-water marshes, bays, and ponds. They tend toward waters with a dense border of cattails, rushes, and reed grass, but in the boreal forest they use open marshes."
+    },
+    {
+      "id": 6,
+      "description": " Wetlands, open areas with short vegetation, wet meadows, grasslands, and crop fields."
+    },
+    {
+      "id": 7,
+      "description": "Small ponds scattered throughout the Great Plains and Canadian prairies."
+    },
+    {
+      "id": 8,
+      "description": "Isolated river deltas, forest wetlands, and mixed prairie regions across northern North America"
+    }
+  ]
 }
