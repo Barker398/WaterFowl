@@ -28,10 +28,18 @@ export const DuckProvider = (props) => {
         })
         .then(getDucks)
     }
+    
+    const removeDuck = duckId => {
+        return fetch(`http://localhost:8088/ducks/${duckId}`, {
+            method: "DELETE"   
+        })
+        .then(getDucks)
+    }
 
     return (
         <DuckContext.Provider value={{
-            ducks, duck, setDuck, getDucks, getDuckById, addDuck
+            ducks, duck, setDuck, getDucks, getDuckById, addDuck,
+            removeDuck
         }}>
             {props.children} 
         </DuckContext.Provider>
