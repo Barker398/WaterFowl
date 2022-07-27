@@ -5,11 +5,20 @@ import "./Duck.css"
 
 export const DuckList = () => {
     const { ducks, getDucks } = useContext(DuckContext)
+    const { duck, removeDuck } = useContext(DuckContext)
+    
     const history = useHistory()
 
     useEffect(() => {
         getDucks()
     }, [])
+
+    const handleRemoval = (duckId) => {
+        removeDuck(duckId)
+        .then(() => {
+            history.push("/ducks")
+        })
+    }
 
     return (
 
@@ -22,8 +31,10 @@ export const DuckList = () => {
                             <Link to={`/ducks/detail/${duck.id}`}>
                                 <button className="commonName">{duck.commonName}</button>
                             </Link>
+                            <button onClick={handleRemoval}>Remove Waterfowl</button>
                             <img src={duck.url} alt="duck pictures" class="center" />
                         </div>
+                        
                     )
                 })}</section>
             <button onClick={
