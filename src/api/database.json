@@ -81,15 +81,6 @@
       "dietId": "7",
       "habitatId": "5",
       "url": "images/canvasback8.jpg"
-    },
-    {
-      "commonName": "",
-      "speciesName": "",
-      "flywayId": 1,
-      "dietId": 1,
-      "habitatId": 1,
-      "url": "",
-      "id": 9
     }
   ],
   "flyways": [
