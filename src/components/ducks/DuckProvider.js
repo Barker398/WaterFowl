@@ -5,7 +5,7 @@ export const DuckContext = createContext()
 
 export const DuckProvider = (props) => {
     const [ducks, setDucks] = useState([])
-    const [duck, setDuck] = useState([])
+    // const [duck, setDuck] = useState([])
 
     const getDucks = () => {
         return fetch("http://localhost:8088/ducks?_expand=flyway&_expand=diet&_expand=habitat")
@@ -38,7 +38,7 @@ export const DuckProvider = (props) => {
 
     return (
         <DuckContext.Provider value={{
-            ducks, duck, setDuck, getDucks, getDuckById, addDuck,
+            ducks, getDucks, getDuckById, addDuck,
             removeDuck
         }}>
             {props.children} 
