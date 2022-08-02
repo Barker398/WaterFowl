@@ -19,7 +19,7 @@ export const FlywayList = () => {
                             <div className="flyway__name">
                                 FlyWay: {flyway.name}
                             </div>
-                            <img src={flyway.url} alt="flyway pictures" class="center" />
+                            <img src={flyway.url} alt="flyway pictures" />
                         </div>
                     )
                 })}
