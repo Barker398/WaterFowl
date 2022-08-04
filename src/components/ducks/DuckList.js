@@ -34,7 +34,7 @@ export const DuckList = () => {
                             <button onClick={() => handleDelete(duck.id)}>
                                 Remove Waterfowl
                             </button>
-                            <img src={duck.url} alt="duck pictures" className="duck--3"/>
+                            <img src={duck.url} alt="duck pictures" />
                         </div>
 
                     )
