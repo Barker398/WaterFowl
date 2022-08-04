@@ -10,6 +10,7 @@ import { FlywayList } from "./flyways/FlywayList";
 import { FlywayProvider } from "./flyways/FlywayProvider";
 import { HabitatList } from "./habitats/HabitatList";
 import { HabitatProvider } from "./habitats/HabitatProvider";
+import { HomePage } from "./home/HomePage";
 
 export const ApplicationViews = () => {
     return (
@@ -18,6 +19,9 @@ export const ApplicationViews = () => {
                 <FlywayProvider>
                     <HabitatProvider>
                         <DietProvider>
+                            <Route path="/home">
+                                <HomePage />
+                            </Route>
                             <Route exact path="/ducks">
                                 <DuckList />
                             </Route>
