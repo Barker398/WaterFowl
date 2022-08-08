@@ -4,8 +4,10 @@ import "./HomePage.css"
 export const HomePage = () => {
 
     return (
-        <div className="bg_image">
+        <>
             <h3>WaterFowl Species</h3>
-        </div>
+
+            <div className="bg_image"></div>
+        </>
     )
 }
