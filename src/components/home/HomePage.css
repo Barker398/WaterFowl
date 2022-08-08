@@ -1,13 +1,14 @@
 .bg_image{
-    background-image: url('/home/sam_barker/workspace/waterfowl/public/images/duckbackground.jpg');
+    background-image: url('/home/sam_barker/workspace/waterfowl/public/images/background-home.jpg');
     background-size: cover;
-    width: 89%;
+    width: 100%;
     height: auto;
     position: fixed;
-    top: 42px;
-    left: 0;
-    min-height: 100%;
-    min-width: 1024px;
-    min-width: -webkit-fill-available
-    
+    top: 100px;
+    min-height: 78%;
+  }
+
+  h3 {
+    display: flex;
+    justify-content: center;
   }
