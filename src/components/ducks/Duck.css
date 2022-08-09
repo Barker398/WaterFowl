@@ -1,4 +1,4 @@
-.ducks {
+/* .ducks {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -11,4 +11,18 @@
     padding: 1em;
     border: 1px solid goldenrod;
     width: min-content;
+} */
+
+.image {
+    width: 40%;
+    border-radius: 6%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.commonName {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
