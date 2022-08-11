@@ -32,14 +32,14 @@ export const DuckList = () => {
                                 <button className="commonName">{duck.commonName}</button>
                             </Link>
                             <img src={duck.url} alt="duck pictures" className="image"/>
-                            <button onClick={() => handleDelete(duck.id)}>
+                            <button className="delete" onClick={() => handleDelete(duck.id)}>
                                 Remove Waterfowl
                             </button>
                         </div>
 
                     )
                 })}</section>
-            <button onClick={
+            <button className="add" onClick={
                 () => history.push("/ducks/create")}>
                 Add Waterfowl
             </button>
