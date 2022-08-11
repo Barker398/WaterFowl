@@ -26,3 +26,14 @@ button.commonName {
     margin-left: auto;
     margin-right: auto;
 }
+
+button.add {
+    display: block;
+    margin-left: auto
+}
+
+button.delete {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
