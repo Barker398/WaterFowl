@@ -10,20 +10,21 @@ export const FlywayList = () => {
     }, [])
 
     return (
-        <section className="flyways">
-            <h1 className="list__header">Flyways</h1>
+        
+        <article className="flyways">
+            <h1 className="list__flyway">Flyways</h1>
             <section className="list__section">
                 {flyways.map((flyway) => {
                     return (
                         <div className="flyway" key={flyway.id} id={`flyway--${flyway.id}`}>
-                            <div className="flyway__name">
-                                FlyWay: {flyway.name}
-                            </div>
-                            <img src={flyway.url} alt="flyway pictures" className="flyway_img"/>
+                            <h3 className="flyway__name">
+                                {flyway.name}
+                            </h3>
+                            <img src={flyway.url} alt="flyway pictures" className="flyway_img" />
                         </div>
                     )
                 })}
             </section>
-        </section> 
+        </article>
     )
 }

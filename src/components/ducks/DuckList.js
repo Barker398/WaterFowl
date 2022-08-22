@@ -22,8 +22,8 @@ export const DuckList = () => {
 
     return (
 
-        <article className="ducks">
-            <h1 className="list__header">Duck Species</h1>
+        <section className="ducks">
+            <h1 className="list__ducks">Duck Species</h1>
             <section className="list__section">
                 {ducks.map((duck) => {
                     return (
@@ -31,19 +31,18 @@ export const DuckList = () => {
                             <Link to={`/ducks/detail/${duck.id}`}>
                                 <button className="commonName">{duck.commonName}</button>
                             </Link>
-                            <img src={duck.url} alt="duck pictures" className="image"/>
+                            <img src={duck.url} alt="duck pictures" className="image" />
                             <button className="delete" onClick={() => handleDelete(duck.id)}>
                                 Remove Waterfowl
                             </button>
                         </div>
-
                     )
                 })}</section>
             <button className="add" onClick={
                 () => history.push("/ducks/create")}>
                 Add Waterfowl
             </button>
-        </article>
+        </section>
 
     )
 }
