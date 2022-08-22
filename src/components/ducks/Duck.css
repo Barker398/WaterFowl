@@ -10,6 +10,7 @@ button.commonName {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    background-color: darkgrey;
 }
 
 button.add {
@@ -21,6 +22,7 @@ button.delete {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-color: red;
 }
 
 div.duck__speciesName {
@@ -41,4 +43,13 @@ div.duck__diet {
 div.duck__habitat {
     display: flex;
     justify-content: center;
+}
+
+h1.list__ducks {
+    display: flex;
+    justify-content: center;
+}
+
+.ducks {
+    background-color: steelblue;
 }

@@ -1,19 +1,15 @@
-.flyways {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center
-}
-
-h1 {
+h1.list__flyway {
     display: flex;
     justify-content: center;
 }
 
 img.flyway_img {
-    width: 70%;
+    width: 24%;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-div.flyway__name {
-    text-decoration-line: underline
+.flyways {
+    background-color: steelblue;
 }
