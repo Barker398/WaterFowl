@@ -1,9 +1,10 @@
 .image {
     width: 40%;
-    border-radius: 6%;
+    border-radius: 28px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 12px;
 }
 
 button.commonName {
@@ -14,8 +15,10 @@ button.commonName {
 }
 
 button.add {
-    display: block;
-    margin-left: auto
+    display: flex;
+    padding: 9px;
+    height: 38px;
+    background-color: forestgreen;
 }
 
 button.delete {
@@ -28,21 +31,37 @@ button.delete {
 div.duck__speciesName {
     display: flex;
     justify-content: center;
+    padding: 10px;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 div.duck__flyway {
     display: flex;
     justify-content: center;
+    padding: 10px;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 div.duck__diet {
     display: flex;
     justify-content: center;
+    padding: 10px;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 div.duck__habitat {
     display: flex;
     justify-content: center;
+    padding: 10px;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 h1.list__ducks {

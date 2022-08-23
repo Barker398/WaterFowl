@@ -5,7 +5,6 @@ import "./Duck.css"
 
 export const DuckList = () => {
     const { ducks, getDucks, removeDuck } = useContext(DuckContext)
-    // const { duck, removeDuck } = useContext(DuckContext)
 
     const history = useHistory()
 

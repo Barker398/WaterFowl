@@ -9,10 +9,6 @@ export const DuckDetail = () => {
 
     const { duckId } = useParams();
 
-    // useEffect(() => {
-    //     getDuckById(duckId)
-    // }, [])
-
     useEffect(() => {
         const thisDuck = ducks.find(d => d.id === parseInt(duckId)) || { flyway: {}, diet: {}, habitat: {} }
         setDuck(thisDuck)

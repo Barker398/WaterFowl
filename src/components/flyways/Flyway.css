@@ -8,6 +8,7 @@ img.flyway_img {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 28px;
 }
 
 .flyways {
