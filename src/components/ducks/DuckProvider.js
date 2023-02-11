@@ -9,15 +9,15 @@ export const DuckProvider = (props) => {
 
     const getDucks = () => {
         return fetch("http://localhost:8088/ducks?_expand=flyway&_expand=diet&_expand=habitat")
-        .then(res => res.json())
-        .then(setDucks)
+            .then(res => res.json())
+            .then(setDucks)
     }
 
     const getDuckById = (duckId) => {
         return fetch(`http://localhost:8088/ducks?id=${duckId}`)
-        .then(res => res.json())
+            .then(res => res.json())
     }
-     
+
     const addDuck = duckObj => {
         return fetch("http://localhost:8088/ducks", {
             method: "POST",
@@ -26,14 +26,14 @@ export const DuckProvider = (props) => {
             },
             body: JSON.stringify(duckObj)
         })
-        .then(getDucks)
+            .then(getDucks)
     }
-    
+
     const removeDuck = duckId => {
         return fetch(`http://localhost:8088/ducks/${duckId}`, {
-            method: "DELETE"   
+            method: "DELETE"
         })
-        .then(getDucks)
+            .then(getDucks)
     }
 
     return (
@@ -41,7 +41,7 @@ export const DuckProvider = (props) => {
             ducks, getDucks, getDuckById, addDuck,
             removeDuck
         }}>
-            {props.children} 
+            {props.children}
         </DuckContext.Provider>
     )
 }

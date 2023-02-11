@@ -29,13 +29,13 @@ export const ApplicationViews = () => {
                                 <DuckForm />
                             </Route>
                             <Route exact path="/ducks/detail/:duckId(\d+)">
-                                <DuckDetail />    
+                                <DuckDetail />
                             </Route>
                             <Route exact path="/flyways">
                                 <FlywayList />
                             </Route>
                             <Route exact path="/habitats">
-                                <HabitatList />    
+                                <HabitatList />
                             </Route>
                             <Route exact path="/diets">
                                 <DietList />

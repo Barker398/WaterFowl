@@ -8,15 +8,15 @@ export const FlywayProvider = (props) => {
 
     const getFlyways = () => {
         return fetch("http://localhost:8088/flyways")
-        .then(res => res.json())
-        .then(setFlyways)
+            .then(res => res.json())
+            .then(setFlyways)
     }
 
     return (
         <FlywayContext.Provider value={{
             flyways, getFlyways
         }}>
-              {props.children}  
+            {props.children}
         </FlywayContext.Provider>
     )
 }

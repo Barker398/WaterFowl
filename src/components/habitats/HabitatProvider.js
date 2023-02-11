@@ -7,15 +7,15 @@ export const HabitatProvider = (props) => {
 
     const getHabitats = () => {
         return fetch("http://localhost:8088/habitats")
-        .then(res => res.json())
-        .then(setHabitats)
+            .then(res => res.json())
+            .then(setHabitats)
     }
 
     return (
         <HabitatContext.Provider value={{
             habitats, getHabitats
         }}>
-            {props.children}    
+            {props.children}
         </HabitatContext.Provider>
     )
 }

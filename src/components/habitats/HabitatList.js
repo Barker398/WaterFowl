@@ -16,12 +16,12 @@ export const HabitatList = () => {
                     return (
                         <div className="habitat" key={habitat.id} id={`habitat--${habitat.id}`}>
                             <div className="habitat__decription">
-                                Habitat: {habitat.description}    
+                                Habitat: {habitat.description}
                             </div>
                         </div>
                     )
-                })}    
-            </section>    
+                })}
+            </section>
         </section>
     )
 }

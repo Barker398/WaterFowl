@@ -1,14 +1,14 @@
-.bg_image{
-    background-image: url('/home/sam_barker/workspace/waterfowl/public/images/background-home.jpg');
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 100px;
-    min-height: 78%;
-  }
+.bg_image {
+  background-image: url('/home/sam_barker/workspace/waterfowl/public/images/background-home.jpg');
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 100px;
+  min-height: 78%;
+}
 
-  h3 {
-    display: flex;
-    justify-content: center;
-  }
+h3 {
+  display: flex;
+  justify-content: center;
+}

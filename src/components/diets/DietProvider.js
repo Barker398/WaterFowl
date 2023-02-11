@@ -8,8 +8,8 @@ export const DietProvider = (props) => {
 
     const getDiets = () => {
         return fetch("http://localhost:8088/diets")
-        .then(res => res.json())
-        .then(setDiets)
+            .then(res => res.json())
+            .then(setDiets)
     }
 
     return (
