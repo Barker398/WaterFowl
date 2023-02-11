@@ -48,7 +48,7 @@ export const Register = () => {
                     conflictDialog.current.showModal()
                 }
             })
-        
+
     }
 
     return (

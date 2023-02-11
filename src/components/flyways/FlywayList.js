@@ -10,7 +10,7 @@ export const FlywayList = () => {
     }, [])
 
     return (
-        
+
         <article className="flyways">
             <h1 className="list__flyway">Flyways</h1>
             <section className="list__section">

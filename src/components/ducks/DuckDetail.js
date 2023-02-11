@@ -5,7 +5,7 @@ import "./Duck.css"
 
 export const DuckDetail = () => {
     const { ducks } = useContext(DuckContext)
-    const [ duck, setDuck ] = useState({ flyway: {}, diet: {}, habitat: {}})
+    const [duck, setDuck] = useState({ flyway: {}, diet: {}, habitat: {} })
 
     const { duckId } = useParams();
 
