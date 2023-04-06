@@ -81,6 +81,14 @@
       "dietId": "7",
       "habitatId": "5",
       "url": "images/canvasback8.jpg"
+    },
+    {
+      "id": 9,
+      "commonName": "Canada Goose",
+      "speciesName": "Branta canadensis",
+      "flywayId": "1",
+      "dietId": "3",
+      "habitatId": "4"
     }
   ],
   "flyways": [
