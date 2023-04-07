@@ -89,6 +89,14 @@
       "flywayId": "1",
       "dietId": "3",
       "habitatId": "4"
+    },
+    {
+      "id": 10,
+      "commonName": "Blue-winged Teal",
+      "speciesName": "Anas discors",
+      "flywayId": "3",
+      "dietId": "6",
+      "habitatId": "8"
     }
   ],
   "flyways": [
