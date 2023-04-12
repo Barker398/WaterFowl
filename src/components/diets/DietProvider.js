@@ -12,9 +12,16 @@ export const DietProvider = (props) => {
             .then(setDiets)
     }
 
+    const removeDiet = dietId => {
+        return fetch(`http://localhost:8088/diets/${dietId}`, {
+            method: "DELETE"
+        })
+            .then(getDiets)
+    }
+
     return (
         <DietContext.Provider value={{
-            diets, getDiets
+            diets, getDiets, removeDiet
         }}>
             {props.children}
         </DietContext.Provider>
