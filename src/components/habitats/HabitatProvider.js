@@ -11,9 +11,20 @@ export const HabitatProvider = (props) => {
             .then(setHabitats)
     }
 
+    const addHabitat = habitatObj => {
+        return fetch("http://localhost:8088/habitats", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(habitatObj)
+        })
+        .then(getHabitats)
+    }
+
     return (
         <HabitatContext.Provider value={{
-            habitats, getHabitats
+            habitats, getHabitats, addHabitat
         }}>
             {props.children}
         </HabitatContext.Provider>
