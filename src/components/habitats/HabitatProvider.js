@@ -19,12 +19,19 @@ export const HabitatProvider = (props) => {
             },
             body: JSON.stringify(habitatObj)
         })
-        .then(getHabitats)
+            .then(getHabitats)
+    }
+
+    const removeHabitat = habitatId => {
+        return fetch(`http://localhost:8088/habitats/${dietId}`, {
+            method: "DELETE"
+        })
+            .then(getHabitats)
     }
 
     return (
         <HabitatContext.Provider value={{
-            habitats, getHabitats, addHabitat
+            habitats, getHabitats, addHabitat, removeHabitat
         }}>
             {props.children}
         </HabitatContext.Provider>
