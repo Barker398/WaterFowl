@@ -8,6 +8,13 @@ export const HabitatList = () => {
         getHabitats()
     }, [])
 
+    const handleDelete = (habitatId) => {
+        removeHabitat(habitatId)
+            .then(() => {
+                history.push("/habitats")
+            })
+    }
+
     return (
         <section className="habitats">
             <h1 className="list__header">Habitats</h1>
@@ -18,6 +25,9 @@ export const HabitatList = () => {
                             <div className="habitat__decription">
                                 Habitat: {habitat.description}
                             </div>
+                            <button className="delete" onClick={() => handleDelete(habitat.id)}>
+                                Remove Habitat
+                            </button>
                         </div>
                     )
                 })}
